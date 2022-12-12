@@ -19,17 +19,7 @@ import {
   ReloadInstructions
 } from 'react-native/Libraries/NewAppScreen'
 import { createDrawerNavigator } from '@react-navigation/drawer'
-// TODO: Fix Storybook v6.0.1-alpha.7 crash and upgrade to v6.0.1-beta.6
-import _StorybookUIRoot from '../.storybook/Storybook'
 const Drawer = createDrawerNavigator()
-
-if (__DEV__) {
-  import('../ReactotronConfig')
-    .then(() => {
-      console.log('Reactotron Configured')
-    })
-    .catch(() => console.error)
-}
 
 /* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
  * LTI update could not be added via codemod */
